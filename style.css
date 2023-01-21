@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+}
+#header{
+    background-color:bisque;
+    padding: 0.5%  ;
+}
+.bitcoin-logo {
+  width: 250px;
+  height: 250px;
+  background: url(./btc.png) no-repeat;
+  background-size: contain;
+  align-content: center;
+ margin: 0 auto;
+}
+
+
+
+
