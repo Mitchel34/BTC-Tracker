@@ -4,13 +4,16 @@ window.addEventListener('DOMContentLoaded', function () {
             .then(response => response.json())
             .then(data => {
                 // Get the USD price
-                const btcPrice = data.bpi.USD.rate_float;
+                const btcPrice = parseFloat(data.bpi.USD.rate_float);
+                const formattedPrice = btcPrice.toFixed(2);
+
                 // Select the btc-price element
                 const btcPriceElement = document.querySelector('#btc-price');
                 // Update the element's text content
-                btcPriceElement.textContent = `$${btcPrice}`;
-                console.log(btcPrice)
+                btcPriceElement.textContent = `$${formattedPrice}`;
+                console.log(btcPrice);
+                console.log(formattedPrice);
             });
-    }, 5000); // Update every 5 seconds
+    }, 1000); // Update every 5 seconds
 });
 

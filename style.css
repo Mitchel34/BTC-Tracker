@@ -46,17 +46,22 @@ pre {
     margin: 0;
 }
 
+/* .btcPriceElement {
+    position: relative;
+    margin: auto;
+} */
+
 .grid {
-    display: inline-grid;
-    grid-gap: 2rem;
+    display: grid;
     grid-template-columns: repeat(3, max-content);
     justify-content: center;
-    width: 100%;
+    align-items: center;
+
 }
 
 .bitcoin {
-    height: 350px;
-    margin: 30px auto 0 auto;
+    /* height: 350px; */
+    margin: 100px auto;
     position: relative;
     width: 350px;
 }
@@ -67,7 +72,6 @@ pre {
     border-radius: 50%;
     height: 300px;
     margin: 0 auto;
-    position: absolute;
     transform: rotate(0);
     transition: var(--transition);
     width: 300px;
@@ -236,39 +240,41 @@ pre {
     margin-top: 3rem;
     text-align: center;
 }
+
 label {
     font-size: 1.2em;
-  }
-  
-  input[type="text"], input[type="password"] {
+}
+
+input[type="text"],
+input[type="password"] {
     padding: 12px 20px;
     margin-bottom: 20px;
     font-size: 16px;
-  }
-  
-  .form-group {
+    width: 28.5%;
+}
+
+.form-group {
     display: flex;
     align-items: center;
-    margin: 1.5%;
-  }
-  
-  .form-control:focus {
+    margin: auto;
+}
+
+.form-control:focus {
     border: 2px solid #007bff;
-  }
-  
-  .error {
+}
+
+.error {
     color: red;
-  }
-  
-  button[type="submit"] {
+}
+
+button[type="submit"] {
     background-color: #007bff;
     color: white;
     padding: 12px 20px;
     border: none;
     cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
+}
+
+button[type="submit"]:hover {
     background-color: #0056b3;
-  }
-  
+}
